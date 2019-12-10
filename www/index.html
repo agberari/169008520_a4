@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fakestagram app">
+<meta name="keywords" content="Fakestagram, social media, sharing, travel">
+<meta name="author" content="Andra Berariu">
+
+  <title>Fakestagram</title>
+
+<link href="css/style.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9e1b7d1d36.js" crossorigin="anonymous"></script>
+
+<script>
+   function on(imgURL) {
+     document.getElementById("myImage").src = imgURL;
+     document.getElementById("overlay").style.display = "block";
+   }
+   function off() {
+     document.getElementById("overlay").style.display = "none";
+   }
+ </script>
+</head>
+
+
+<body>
+<div class="main-container">
+  <div class="left-header">
+  <img src="img/avatar.jpg" alt="avatar" class="avatar">
+</div>
+<div class="right-header">
+ <p class="heading-1"> World Travel Blog </p>
+ <p class="heading-2">Artistic photos of nature taken all around the world!</p>
+</div>
+</div>
+
+<!-- Photo Grid -->
+
+<div id="overlay" onclick="off()">
+  <div id="popupContentWrapper">
+   <img id="myImage" style="width: 600px;" src="">
+   <div id="popupRightSide">
+
+     <div class="contentBlockWrap">
+        <div class="smallAvatar"><img src="img/avatar.jpg" width="32" height="32" /> </div>
+        <div class="usernameComment"><span class="username">random_username</span><br>
+<span class="comment">Nagano Prefecture, Japan</span>
+        </div>
+     </div>
+     <hr style="border: 1px solid #f2f2f2;">
+
+     <div class="contentBlockWrap">
+        <div class="smallAvatar"><img src="img/avatar.jpg" width="32" height="32" /> </div>
+        <div class="usernameComment"><span class="username">SomeUser</span>
+<span class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+<p class="timestamp" style="font-weight: bold; color: #afafaf;">13m</p>
+        </div>
+     </div>
+
+     <div class="contentBlockWrap">
+        <div class="smallAvatar"><img src="img/avatar.jpg" width="32" height="32" /> </div>
+        <div class="usernameComment"><span class="username">SomeUser</span>
+    <span class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida rhoncus enim quis auctor.</span>
+    <p class="commentTimestamp">11m &nbsp;&nbsp; <span style="font-size: 11px;">Reply</span></p>
+        </div>
+     </div>
+
+ <div class="popupFooter" style="position: absolute; bottom: 0;">
+   <div class="icons">
+    <div style="flex-grow:1;"> <i class="fa fa-heart-o"></i>&nbsp;
+     <i class="fa fa-comment-o"></i>&nbsp;
+      <i class="fa fa-share-square-o"></i>
+    </div>
+    <div style="flex-grow:1; text-align: right;">
+     <i class="fa fa-bookmark-o"></i>
+   </div>
+ </div>
+<p class="username">225 likes</p>
+<p class="postTimestamp">13 minutes ago</p>
+</div>
+
+   </div>
+ </div>
+ </div>
+
+<div class="row">
+  <div class="column">
+      <img src="img/bird.jpg" alt="bird" style="width:100%" onclick="on('img/bird.jpg')">
+      <img src="img/boat.jpg" alt="boat" style="width:100%" onclick="on('img/boat.jpg')">
+      <img src="img/fish.jpg" alt="fish" style="width:100%" onclick="on('img/fish.jpg')">
+      <img src="img/flower.jpg" alt="flower" style="width:100%" onclick="on('img/flower.jpg')">
+      <img src="img/forrest.jpg" alt="forrest" style="width:100%" onclick="on('img/forrest.jpg')">
+  </div>
+  <div class="column">
+      <img src="img/hummingbird.jpg" alt="hummingbird" style="width:100%" onclick="on('img/hummingbird.jpg')">
+      <img src="img/leafs.jpg" alt="leafs" style="width:100%" onclick="on('img/leafs.jpg')">
+      <img src="img/mountains.jpg" alt="mountains" style="width:100%" onclick="on('img/mountains.jpg')">
+      <img src="img/ocean.jpg" alt="ocean" style="width:100%" onclick="on('img/ocean.jpg')">
+      <img src="img/pathway.jpg" alt="pathway" style="width:100%" onclick="on('img/pathway.jpg')">
+  </div>
+  <div class="column">
+      <img src="img/sunflower.jpg" alt="sunflower" style="width:100%" onclick="on('img/sunflower.jpg')">
+      <img src="img/sunshine.jpg" alt="sunshine" style="width:100%" onclick="on('img/sunshine.jpg')">
+      <img src="img/trees.jpg" alt="trees" style="width:100%" onclick="on('img/trees.jpg')">
+      <img src="img/waterfall.jpg" alt="waterfall" style="width:100%" onclick="on('img/waterfall.jpg')">
+      <img src="img/waves.jpg" alt="waves" style="width:100%" onclick="on('img/waves.jpg')">
+</div>
+</div>
+
+</body>
+</html>
